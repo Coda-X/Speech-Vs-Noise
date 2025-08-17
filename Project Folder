@@ -1,3 +1,8 @@
 git init
 git add.
 git commit -m "Environment setup complete"
+
+git add.
+git commit -m "Day 2: Organized dataset folders and added first waveform visualization"
+git push
+
