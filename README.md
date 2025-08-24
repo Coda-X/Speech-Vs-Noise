@@ -23,5 +23,20 @@ Day 2 - Dataset and First visualization
 - Those numbers can be turned into patterns that could be analyzed and that a machine can learn.
 
 
-Day 3 - 
+Day 3 - Preprocessing and Mel Spectrogram
+- Wrote a Python script: 'preprocess.py'
+  - Trims leading and trailing silence from audio clips
+  - Normalizes loudness so files are on the same scale
+  - Cuts or pads every clip to exactly 3 seconds
+  - Saves processed clips into 'data/processed/...'
+ 
+- Created 'day3_visualize.py' to plot a mel spectrogram
+  - Displays sound as a time frequency heatmap
+  - Used on a processed dog bark file
+ 
+- Day 3 was about about preparing consistent inputs for machine learning.
+  - I learned that for a model to compare sounds fairly, all audio must be the same length and volume.
+  - The mel spectrogram made sound look like a picture, showing how noise looks random while speech forms clearer patterns.
+
+Day 4 - 
 
