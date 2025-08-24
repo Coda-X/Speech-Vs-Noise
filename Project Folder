@@ -6,3 +6,7 @@ git add.
 git commit -m "Day 2: Organized dataset folders and added first waveform visualization"
 git push
 
+git add.
+git commit -m "Day 3: Preprocessing to 3s and mel spectrogram visualization"
+git push
+
