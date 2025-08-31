@@ -38,5 +38,20 @@ Day 3 - Preprocessing and Mel Spectrogram
   - I learned that for a model to compare sounds fairly, all audio must be the same length and volume.
   - The mel spectrogram made sound look like a picture, showing how noise looks random while speech forms clearer patterns.
 
-Day 4 - 
+Day 4 - MFCC Feature Extraction 
+Wrote a Python Script: 'day4_mfcc_extract.py'
+- Extracts Mel-Frequency Cepstral Coefficients (MFCC) from processed 3-second clips
+- Saves per file MFCC matrices into 'feature/'
+- Builds a combined dataset 'dataset.npz' with compact feature vectors (speech = 1, noise = 0)
+
+Created 'day4_visualize_mfcc.py' to plot MFCC spectrograms
+- Displays MFCCs as a heatmap of coefficients over time
+- Speech shows smoother, repeating patterns.
+- Noise appears scattered and irregular.
+
+Day 4 was about transforming sound into mathematical features that a machines learning model can use.
+I learned that MFCCs capture the important structure of sound while ignoring extra noise. 
+It reminded me of how my mom's hearing aids emphasizes key frequencies - the same principle I applied today through math. 
+
+Day 5- 
 
