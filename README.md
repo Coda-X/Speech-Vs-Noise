@@ -177,4 +177,42 @@ It reminded me of my mom’s experience with her hearing aids:
 
 Failures aren’t the end: they’re the first step toward growth.
 
+**Day 9 - CNN Upgrade**
+
+Wrote Python Scripts:
+- 'day9_build_cnn_dataset.py'
+  - Converts processed audio clips into **log-mel spectrograms** for CNN input
+  - Standardizes each spectrogram to shape '(64, 128, 1)'
+  - Saves the dataset to 'features/cnn_dataset.npz'
+  - Exports example spectrogram images to 'features/plots' for review
+
+- 'day9_cnn_train.py'
+  - Builds and trains a Convolutional Neural Network using TensorFlow/Keras
+  - Adds early stopping and model checkpointing to prevent overfitting
+  - Generates training curves for **accuracy** and **loss**
+  - Saves the best trained model to 'features/models/day9_cnn_best.h5'
+  - Creates confusion matrix visualization and saves to 'features/plots/day9_cnn_confusion.png'
+
+- 'day9_compare_old_vs_cnn.py'
+  - Compares Day 6 model accuracy vs the new CNN on the **same validation set**
+  - Generates a bar chart to visually show improvement
+  - Saves comparison chart to 'features/plots/day9_model_compare.png'
+
+
+- CNN achieved **significantly higher accuracy** than the Day 6 model, especially on complex, overlapping noise clips.
+- Log-mel spectrograms allowed the CNN to “see” audio patterns like images.
+- The comparison chart clearly showed CNN > Old Model performance.
+
+Day 9 was a major step forward in my project.  
+At first, CNNs felt intimidating and complicated, but once I broke the problem into smaller steps, I realized they’re just another tool for learning patterns.
+
+Seeing the CNN outperform my original model was exciting.  
+It felt like a glimpse into how deep learning can create real-world solutions.
+
+This reminded me of my mom’s hearing aids:
+- With better technology and tuning, clarity improves step by step.
+- Just like her devices, my model became more accurate and reliable.
+
+Day 9 taught me that embracing harder challenges leads to growth, both for me and my AI.
+
 
