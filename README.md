@@ -215,4 +215,82 @@ This reminded me of my mom’s hearing aids:
 
 Day 9 taught me that embracing harder challenges leads to growth, both for me and my AI.
 
+**Day 10 - Model Comparison**
 
+day10_compare_models.py
+
+Loads both the classic logistic regression model (Day 5) and the new CNN (Day 9).
+
+Evaluates each model on the same validation dataset.
+
+Calculates and compares accuracy, precision, and recall metrics.
+
+Generates confusion matrices for both models.
+
+Creates a side-by-side bar chart showing performance differences.
+
+Saves comparison visuals to features/plots/day10_model_comparison.png.
+
+The CNN handled more complex and noisy clips more effectively than the classic model, though it required more training time and data.
+This comparison made the strengths and trade-offs between traditional ML and deep learning clearer.
+
+Day 10 helped me understand that higher model complexity isn’t always the same as better performance — it depends on data, tuning, and balance.
+Just like fine-tuning hearing aids, both simple and advanced tools can bring clarity in their own ways.
+
+
+**Day 11 - Real World Test**
+
+day11_predict.py
+
+Records new real-world audio samples (speech and background noise).
+
+Loads the trained CNN model from Day 9.
+
+Processes each .wav file into MFCC features for prediction.
+
+Prints predictions and confidence scores for each sample.
+
+Tests on clean speech, environmental noise, and mixed audio (voice + noise).
+
+Saves results log to results/day11_predictions.txt.
+
+Audio samples tested:
+
+hello.wav → Speech ✅
+
+fan.wav → Noise ✅
+
+mix_0dB.wav → Mixed → Uncertain ⚠️
+
+Day 11 brought my project out of theory and into reality.
+It was thrilling to see my model recognize real audio I recorded myself.
+Though imperfect with mixed sounds, it showed real potential — like the first time my mom’s hearing aids helped her hear a whisper again.
+Each small success felt meaningful.
+
+
+**Day 12 - Noise Reduction Demo**
+
+day12_timeline.py
+
+Loads a mixed audio file (mix_0dB.wav) and plots the model’s speech probability over time.
+
+Creates a visual timeline of “speech detected” vs “noise only” segments.
+
+Saves the plot to features/plots/day12_timeline.png.
+
+day12_apply_gate.py
+
+Implements a simple “noise gate” effect using the CNN’s output probabilities.
+
+Reduces background noise while preserving speech clarity.
+
+Adjusts gain dynamically based on speech detection confidence.
+
+Saves the enhanced file to outputs/day12/enhanced_thresh0.6_att-12dB.wav.
+
+Logs parameters and performance notes.
+
+Hearing the before-and-after difference was surreal — the background faded, and my voice came through clearer.
+It reminded me how technology, when guided by empathy, can bridge the gap between silence and sound.
+
+Day 12 marked the transformation from an experiment into something real — a step closer to the same principles behind hearing aids and noise-canceling apps.
